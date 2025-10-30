@@ -1,3 +1,54 @@
+
+  body {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* nav bar */
+    .nav {
+      background-color: rgb(98, 38, 0);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 16px;
+      height: 50px;
+      color: rgba(255, 255, 255, 0.493);
+    }
+    .nav > h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+   
+    .navLinks {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .navLinks > a {
+      color: rgba(255, 255, 255, 0.493);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .navLinks > button {
+      background-color: rgb(33, 13, 0);
+      border: none;
+      height: 26px;
+      padding-inline: 10px;
+      border-radius: 20px;
+      color: rgba(255, 255, 255, 0.646);
+      font-size: 12px;
+      cursor: pointer;
+    }
+    /* nav bar ended */
+
+    /* hero */
+    .hero > img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+    /* hero ended */
+
 .productCard {
       background-color: rgb(236, 236, 236);
       width: 220px;
@@ -42,22 +93,40 @@
       color: rgba(255, 255, 255, 0.922);
       cursor: pointer;
       transition: all 0.4s;
-      
-      display: flex;
-      justify-content: space-evenly;
-      
-      
     }
 
     .productDetails > button:hover {
       background-color: white;
       color: brown;
-    }
+    } 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
+    }
+
+     /* footer */
+    .footer {
+      background-color: rgb(98, 38, 0);
+      color: rgba(255, 255, 255, 0.47);
+      text-align: center;
+      padding-top: 14px;
+      margin-top: 20px;
+    }
+    .footer > a {
+      background-color: rgb(33, 13, 0);
+      display: flex;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.434);
+      text-decoration: none;
+      font-size: 12px;
+      padding: 4px;
+      margin-top: 20px;
+    }
+    .about {
+      max-width: 400px;
+      margin: auto;
     }
       
