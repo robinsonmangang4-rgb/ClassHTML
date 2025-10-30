@@ -6,7 +6,7 @@
 
     /* nav bar */
     .nav {
-      background-color: rgb(98, 38, 0);
+      background-color: rgba(134, 56, 11, 0.753);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -43,7 +43,7 @@
 
     /* hero */
     .hero > img {
-      height: 400px;
+      height: 500px;
       width: 100%;
       object-fit: cover;
     }
@@ -53,11 +53,7 @@
       background-color: rgb(236, 236, 236);
       width: 220px;
     }
-    .product1{
-      
-      
-    }
-
+  
     .productImage {
       width: 100%;
     }
@@ -93,6 +89,7 @@
       color: rgba(255, 255, 255, 0.922);
       cursor: pointer;
       transition: all 0.4s;
+      margin: 2px;
     }
 
     .productDetails > button:hover {
