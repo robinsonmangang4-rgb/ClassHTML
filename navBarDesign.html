@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <title>NavBarDesign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }  
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #c2bcbc;
+            color: #fff;
+        }
+
+        nav.left {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #1a1a;
+            width: 100%;
+        }
+
+
+
+        .image img {
+            height: auto;
+            width: 150px;
+            border-radius: 8px;
+
+        }
+
+        .image {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 10px 7px;
+        }
+
+        header.Up,
+        section.Down {
+            width: 100%;
+        }
+
+
+        /* Top Red Bar */
+        header.Up {
+            background-color: #c20000;
+            /* red color */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 40px;
+            font-size: 14px;
+        }
+
+        .clock {
+            font-weight: 500;
+        }
+
+        .URL.menu {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Social links */
+        .URS.menu small {
+            margin-right: 10px;
+        }
+
+        .URS.menu a {
+            color: white;
+            margin-left: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .URS.menu a:hover {
+            color: #ffd700;
+            /* gold hover color */
+        }
+
+        /* Bottom Dark Bar */
+        section.Down {
+            background-color: #0a0f1a;
+            /* dark navy */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            
+        }
+
+        /* Logo area */
+        .image img {
+            height: 50px;
+            /* logo size */
+            width: auto;
+        }
+
+        /* Navigation menu */
+        .DLS.menu ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .DLS.menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: auto;
+            transition: color 0.3s;
+
+        }
+
+        .DLS.menu a:hover {
+            color: #ffd700;
+        }
+
+        div.left {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- top red nav bar -->
+    <nav class="left">
+
+        <div class="image">
+            <img src="RACollection.jpg" alt="">
+        </div>
+
+        <div class="right">
+            <header class="Up">
+                <div class="clock">09:10:55 pm date 01/11/25</div>
+
+                <div class="URS menu">
+                    <small>Follow us:</small>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><wa-icon name="instagram" family="brands"></wa-icon></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </header>
+
+            <section class="Down">
+                <div class="DLS menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="DRS menu">
+                    <a href="#"><i class="fa-brands fa-searchengin"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </section>
+        </div>
+    </nav>
+</body>
+</html>
