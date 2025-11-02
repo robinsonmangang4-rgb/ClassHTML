@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <title>testNav</title>
+
+    <style>
+        
+        .left {
+            display: flex;
+        }
+
+        .image {
+            
+            width: 60px;
+            height: 75.9px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .up {
+            background-color: rgb(201, 87, 87);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .down {
+            background-color: rgb(15, 15, 15);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .TD {
+            background-color: transparent;
+            margin: 10px;
+        }
+
+        .FU {
+            color: white;
+            background-color: transparent;
+            margin: 10px;
+        }
+        .FU> a{
+            color: white;
+        }
+
+        .HA {
+            background-color: transparent;
+            display: flex;
+            margin: 10px;
+            gap: 12px;
+            color: transparent;
+        }
+         .HA> li > a { 
+           
+            color: white;
+        }
+        .SA {
+            background-color: transparent;
+            margin: 10px;
+        }
+
+         .SA > a { 
+           
+            color: white;
+        }
+
+        @media(max-width:500px) {
+
+            .image {
+                height: auto;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section class="left">
+
+        <img class="image" src="RACollection.jpg" alt="">
+
+        <div class="right">
+            <div class="up">
+                <div class="TD">
+                    09:10:55 pm date 01/11/25
+                </div>
+
+                <div class="FU">
+                    <small>Follow us:</small>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="down">
+                <div class="HA">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+
+                <div class="SA">
+                    <a href="#"><i class="fa-brands fa-searchengin"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
