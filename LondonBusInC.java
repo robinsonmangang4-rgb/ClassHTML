@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 class Incentive {
     public static void main(String[] args) {
@@ -75,7 +75,7 @@ class Incentive {
         else if (total >= 1250 && total < 1510)
 
         {
-            incentiveRate = a;
+            incentiveRate = n;
         }
 
         if (incentiveRate > 0) {
