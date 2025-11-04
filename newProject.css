@@ -1,0 +1,244 @@
+
+
+/* Colors */
+:root {
+    --primary: #111;
+    --accent: #ff6600;
+    --light: #f4f4f4;
+}
+       /* nav bar */
+        body{
+            margin: 0px;
+            background-color:#a6e1fc;
+
+        }
+        
+        .left {
+            display: flex;
+        }
+
+        .image {
+            
+            width: 100px;
+            height: 75.9px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .up {
+            background-color: #ff6600;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .down {
+            background-color: rgb(15, 15, 15);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .TD {
+            background-color: transparent;
+            margin: 10px;
+        }
+
+        .FU {
+            color: white;
+            background-color: transparent;
+            margin: 10px;
+        }
+        .FU> a{
+            color: white;
+        }
+
+        .HA {
+            background-color: transparent;
+            display: flex;
+            margin: 10px;
+            gap: 12px;
+            color: transparent;
+        }
+         .HA> li > a { 
+           text-decoration: dashed;
+            color: white;
+        }
+        .SA {
+            background-color: transparent;
+            margin: 10px;
+        }
+
+         .SA > a { 
+           
+            color: white;
+        }
+
+        @media(max-width:500px) {
+
+            .image {
+                height: auto;
+
+            }
+        }
+   /* navBar end */
+/* Buttons */
+.btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #e05600;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x700?text=Hero+Banner') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    max-width: 500px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content > img {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.hero-btn {
+    background: awhite;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Featured Products */
+.featured {
+    text-align: center;
+    padding: 5rem 5%;
+    background: #a6e1fc;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.small-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cta p {
+    margin-bottom: 2rem;
+}
+
+.newsletter input {
+    padding: 0.7rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: var(--light);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer .socials {
+    margin-top: 0.5rem;
+}
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
