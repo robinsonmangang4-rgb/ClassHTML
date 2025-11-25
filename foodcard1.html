@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Spicey Burger Hub Card</title>
+  <style>
+    :root{
+      --card-bg: #1f1f23;
+      --tag-bg: #f5e1bd;
+      --muted: #cfcfcf;
+      --accent-1: #2563eb;
+      --accent-2: #3b82f6;
+    }
+
+    /* Page center */
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(180deg, #e9e9ea 0%, #d7d7d9 100%);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    /* Card */
+    .card{
+      width: 320px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 24px;
+      padding-top: 140px; /* leave space for floating image */
+      position: relative;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+      color: #fff;
+      overflow: visible;
+    }
+
+    /* Floating burger image */
+    .burger {
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 440px;
+      max-width: 78%;
+      filter: drop-shadow(0 16px 30px rgba(0,0,0,0.55));
+      border-radius: 18px;
+      transition: transform .35s ease;
+    }
+
+    /* subtle float on hover */
+    .card:hover .burger {
+      transform: translateX(-50%) translateY(-6px) scale(1.02);
+    }
+
+    /* Title row */
+    .title-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .title{
+      font-size:20px;
+      font-weight:600;
+      margin:0;
+      letter-spacing: -0.2px;
+    }
+
+    .fav-box{
+      width:26px;
+      height:26px;
+      border-radius:6px;
+      border:1px solid rgba(255,255,255,0.14);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      background: rgba(255,255,255,0.02);
+    }
+.fav-box:hover { 
+      background-color: #2563eb;
+    }
+    /* Tags */
+    .tags{
+      margin-top:14px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .tag{
+      background: var(--tag-bg);
+      color:#000;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:600;
+      letter-spacing:0.2px;
+      display:inline-block;
+    }
+
+    /* Description */
+    .desc{
+      color: var(--muted);
+      font-size:14px;
+      line-height:1.5;
+      margin-top:14px;
+    }
+
+    .see-more{
+      color: #4da3ff;
+      cursor:pointer;
+      text-decoration: none;
+      font-weight:600;
+      margin-left:6px;
+    }
+
+    /* Footer: price + button */
+    .card-footer{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:18px;
+      gap:12px;
+    }
+
+    .price{
+      font-size:32px;
+      font-weight:800;
+      margin:0;
+      color:#fff;
+    }
+
+    .btn{
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      color:#fff;
+      padding:10px 16px;
+      border-radius:12px;
+      border: none;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow: 0 8px 18px rgba(59,130,246,0.18);
+      transition: transform .18s ease, box-shadow .18s ease;
+      white-space:nowrap;
+    }
+
+    .btn:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(37,99,235,0.18);
+    }
+
+    /* Responsive small screens */
+    @media (max-width:360px){
+      .card{ width: 92%; padding-top: 120px; }
+      .burger{ width: 180px; top:-60px; }
+      .price{ font-size:28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="card" aria-label="Product card for Spicey Burger Hub">
+    <!-- Use the uploaded image path here -->
+    <img src="burger1.png" alt="Floating burger" class="burger" />
+
+    <header class="title-row">
+      <h1 class="title">Spicey Burger Hub</h1>
+      <div class="fav-box" title="Add to favorites" aria-hidden="true">
+      <i class="fa-regular fa-heart"></i> 
+
+      </div>
+    </header>
+
+    <div class="tags" aria-hidden="false">
+      <span class="tag">HeatWave</span>
+      <span class="tag">FlavorFusion</span>
+      <span class="tag">ZestBite</span>
+    </div>
+
+    <p class="desc">
+      Spicey Burger Hub serves mouthwatering, fiery burgers that pack a punch of flavor.
+      Indulge in the perfect blend of spice and satisfaction at our hub for a truly unforgettable
+      <a class="see-more" href="#" aria-label="See more details">See more</a>
+    </p>
+
+    <div class="card-footer">
+      <p class="price" aria-hidden="false">$45</p>
+      <button class="btn" type="button" aria-label="Add to cart">Add To Cart</button>
+    </div>
+  </article>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>foodcaed</title>
+    <style>
+    .body{
+      margin-top: 100px;
+      display:flex;
+     
+      justify-content:center;
+      background: linear-gradient(180deg, #e9e9ea 0%, #d7d7d9 100%);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    .card{
+    background-color: rgb(44, 43, 43);
+    height:auto ;
+    width:320px;
+    padding: 24px;
+    border-radius: 24px;
+    padding-top: 150px;
+    position: relative;
+    overflow: visible;
+    }
+    .love{
+        background-color: #4da3ff;
+    border-radius: 20%;
+    
+    }
+    .B{
+        color: red;
+       
+    }
+    
+    .burger {
+      position: absolute;
+      top: -150px;
+      left:54%;
+      transform: translateX(-50%);
+      width: 440px;
+      max-width: 78%;
+      filter: drop-shadow(0 16px 30px rgba(0,0,0,0.55));
+      border-radius: 18px;
+      transition: transform .35s ease;
+    }
+    
+.title{
+    color: #d7d7d9;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+   .description{
+      color: white;
+      font-size:14px;
+      line-height:1.5;
+      margin-top:14px;
+    }
+.see-more{
+      color: #4da3ff;
+      cursor:pointer;
+      text-decoration: none;
+      font-weight:600;
+      margin-left:6px;
+    }
+
+ .flavor{
+    margin-top:14px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+ }
+ .A{
+      background: rgba(255, 255, 255, 0.678) ;
+
+      color:#000;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:600;
+      letter-spacing:0.2px;
+      display:inline-block;
+    }
+    .buy{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:18px;
+      gap:12px;
+    }
+    .price{
+      font-size:26px;
+      margin:0;
+      color:#ffffff91;
+    }
+    .price:hover{
+        text-decoration: solid;
+        color: rgb(70, 70, 219);
+    }
+.add{
+      background-color: rgba(79, 79, 241, 0.87);
+      color:#ffffff;
+      padding:10px 16px;
+      border-radius:12px;
+      border: none;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow: 0 2px 12px rgba(253, 44, 8, 0.973);
+      transition: transform .18s ease, box-shadow .18s ease;
+      white-space:nowrap;
+    }
+    .add:hover{
+              transform: translateX(2%) translateY(-6px) ;
+
+    }
+
+</style> 
+
+</head>
+<body class="body">
+  
+
+<!-- foodcard -->
+<div class="card">
+    <img src="burger1.png" alt="Floating burger" class="burger">
+    <div class="title">
+        <h1>Spicey Burger Hub </h1>
+        <div class="love" aria-hidden="true">
+        <i class="fa-solid fa-heart B"></i> 
+        </div>
+    </div>
+    
+    <div class="flavor">
+      <span class="A">HeatWave</span>
+      <span class="A">FlavorFusion</span>
+      <span class="A">ZestBite</span>
+    </div>
+    <p class="description">
+        Spicey Burger Hub serves mouthwatering,
+         fiery burgers that pack a punch of flavor. 
+         Indulge in the perfect blend of spice 
+         and satisfaction at our hub for a truly 
+         unforgettable 
+        <a class="see-more" href="#" aria-label="See more details">See more</a>
+    </p>
+    <div class="buy">
+        <h2 class="price">$45</h2>
+        <button class="add">Add To Card</button>
+    </div>
+</div>
+
+
+
+</body>
+</html>
