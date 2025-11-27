@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Hospitals Urgent Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <!-- 🔹 NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="Dr.logo4.jpg" alt="Logo" class="w-16 h-16 rounded-full object-cover" />
+        <h1 class="text-lg sm:text-xl font-bold text-red-700 leading-tight">
+          University Hospitals<br>
+          <span class="text-gray-700 font-medium text-sm">Urgent Care</span>
+        </h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-medium text-sm">
+        <a href="#" class="text-red-600 hover:underline">Contact Us</a>
+        <a href="#" class="hover:text-red-600">Careers</a>
+        <a href="#" class="hover:text-red-600">Locations</a>
+        <a href="#" class="hover:text-red-600">Services</a>
+        <a href="#" class="hover:text-red-600">About</a>
+        <a href="#" class="hover:text-red-600">Occupational Health</a>
+        <a href="#" class="hover:text-red-600">Resources</a>
+      </nav>
+
+      <!-- Buttons -->
+      <div class="hidden md:flex space-x-2">
+        <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800">Pay Online</button>
+        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Visit Status</button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-red-700 text-2xl" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-white border-t shadow-md md:hidden">
+      <nav class="flex flex-col items-center py-3 space-y-3 text-sm font-medium">
+        <a href="#" class="hover:text-red-600">Contact Us</a>
+        <a href="#" class="hover:text-red-600">Careers</a>
+        <a href="#" class="hover:text-red-600">Locations</a>
+        <a href="#" class="hover:text-red-600">Services</a>
+        <a href="#" class="hover:text-red-600">About</a>
+        <a href="#" class="hover:text-red-600">Occupational Health</a>
+        <a href="#" class="hover:text-red-600">Resources</a>
+        <div class="flex space-x-2 pt-2">
+          <button class="bg-red-700 text-white px-3 py-1 rounded">Pay</button>
+          <button class="bg-red-600 text-white px-3 py-1 rounded">Status</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔹 HERO -->
+  <section class="mt-24 relative w-full h-[480px] sm:h-[520px]">
+    <img src="Dr.Robin3.jpg" alt="Doctor" class="absolute inset-0 w-full h-full object-cover brightness-50" />
+    <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-24 text-white">
+      <h2 class="text-3xl sm:text-5xl font-bold mb-4">Urgent Care Services</h2>
+      <p class="text-lg mb-6 max-w-xl">From illness to X-rays, we've got you covered.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#" class="bg-red-600 px-6 py-2 rounded-md hover:bg-red-700">Book Ahead Now</a>
+        <a href="#" class="bg-white text-red-700 px-6 py-2 rounded-md hover:bg-gray-200">Virtual Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 ABOUT / CARDS SECTION -->
+  <section class="bg-cyan-100 py-16 px-6 md:px-20">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="Dr.Robin2.jpg" alt="Director" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-lg text-red-700 mb-2">Director's Message</h3>
+          <p class="text-sm text-gray-600">Patient care, research and teaching are at the core of Robin Care Hospital.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="Dr.Robin2.jpg" alt="Administration" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-lg text-red-700 mb-2">Administration</h3>
+          <p class="text-sm text-gray-600">Online dashboards and portals for appointments, attendance and results.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="Dr.Robin2.jpg" alt="Community" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-lg text-red-700 mb-2">Community & Outreach</h3>
+          <p class="text-sm text-gray-600">Health camps, donation drives, and awareness programs to serve society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 NOTICES + SIDEBAR -->
+  <section class="max-w-6xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-8">
+    <!-- Notices -->
+    <div class="flex-1 bg-white p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-red-700 mb-3">Latest Notices</h3>
+      <ul class="list-disc ml-6 text-gray-700 space-y-2">
+        <li>OPD timings updated — 10 Nov 2025</li>
+        <li>Blood donation camp — 15 Nov 2025</li>
+        <li>COVID-19 precautions and visitor policy</li>
+      </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow">
+      <h3 class="text-xl font-semibold text-red-700 mb-2">OPD Schedule</h3>
+      <p>Mon - Sat: <strong>9:00 AM - 4:00 PM</strong></p>
+      <a href="#" class="inline-block mt-4 bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700">Make Appointment</a>
+    </aside>
+  </section>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="bg-gray-800 text-gray-300 pt-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <!-- Contact -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">Contact Us</h3>
+        <p>All India Institute of Medical Sciences<br>Imphal, Manipur - 795001</p>
+        <p><strong>Board:</strong> +91-11-2658850 / 26588700</p>
+        <p><strong>Fax:</strong> +91-11-26588663 / 26588641</p>
+        <p class="mt-2"><strong>CVO:</strong> Robin Care Hospital Imphal</p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">Important Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-orange-400">Citizen Charter</a></li>
+          <li><a href="#" class="hover:text-orange-400">Online Donation</a></li>
+          <li><a href="#" class="hover:text-orange-400">RTI Act 2005</a></li>
+          <li><a href="#" class="hover:text-orange-400">Proactive Disclosure</a></li>
+          <li><a href="#" class="hover:text-orange-400">MoHFW</a></li>
+          <li><a href="#" class="hover:text-orange-400">Mission Imphal</a></li>
+        </ul>
+      </div>
+
+      <!-- Other Centers -->
+      <div>
+        <h3 class="text-white font-bold text-lg mb-3">Other Branches</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-orange-400">Imphal</a></li>
+          <li><a href="#" class="hover:text-orange-400">Thoubal</a></li>
+          <li><a href="#" class="hover:text-orange-400">Kakching</a></li>
+          <li><a href="#" class="hover:text-orange-400">Senapati</a></li>
+          <li><a href="#" class="hover:text-orange-400">Bishnupur</a></li>
+          <li><a href="#" class="hover:text-orange-400">Ukhrul</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 py-6 text-center">
+      <img src="Dr.Robin3.jpg" alt="logo" class="mx-auto w-24 h-24 rounded-full mb-3">
+      <p class="text-gray-400 text-sm">© 2025 Robin Care Hospital, Manipur</p>
+    </div>
+  </footer>
+</body>
+</html>

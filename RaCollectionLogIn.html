@@ -3,173 +3,93 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <title>SignUp</title>
-
-
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        /* nev bar */
-        .nav {
-            background-color: rgb(203, 159, 245);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-inline: 16px;
-            height: 50px;
-            color: rgb(155, 71, 180);
-
-        }
-
-        .nav>h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .navLinks {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .navLinks>a {
-            color: rgba(18, 5, 49, 0.493);
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .navLinks>button {
-            background-color: rgb(26, 36, 177);
-            border: none;
-            height: 26px;
-            padding-inline: 10px;
-            border-radius: 20px;
-            color: rgba(255, 255, 255, 0.646);
-            font-size: 12px;
-            cursor: pointer;
-        }
-
-
-        .navLinks>button:hover {
-            background-color: rgb(180, 141, 141);
-            color: rgb(88, 80, 80);
-        }
-
-
-        body {
-            margin: 0;
-        }
-
-        .formSection {
-            height: 100dvh;
-            width: 100dvw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            background-color: rgb(235, 241, 255);
-            width: 300px;
-            height: 380px;
-            border-radius: 10px;
-            border: 1px solid rgb(175, 175, 175);
-        }
-
-        .container>h4,
-        .container>p {
-            text-align: center;
-        }
-
-        .container>p {
-            font-size: 12px;
-            margin: 0;
-        }
-
-        .form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 16px;
-        }
-
-        .inputBox {
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            align-items: center;
-            border: 2px solid rgb(70, 70, 70);
-            border-radius: 6px;
-            height: 30px;
-        }
-
-        .inputBox>input {
-            flex: 1;
-            height: 100%;
-            border: none;
-            padding-left: 6px;
-            background-color: transparent;
-            outline: none;
-        }
-
-        .inputBox>i {
-            background-color: rgb(70, 70, 70);
-            height: 100%;
-            width: 30px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .submitBtn {
-            background-color: rgb(131, 131, 255);
-            border: none;
-            border-radius: 6px;
-            height: 30px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
-<body>
-    <!-- nev bar -->
-    <nav class="nav">
-        <h1>R A collection</h1>
+<body class="m-0 p-0">
 
-        <div class="navLinks">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <button>SignUp</button>
+    <!-- Navbar -->
+    <nav class="bg-purple-300 flex justify-between items-center px-4 h-12 text-purple-700">
+        <h1 class="text-xl font-semibold">R A collection</h1>
+
+        <div class="flex items-center gap-3">
+            <a href="#" class="text-sm text-gray-700">Home</a>
+            <a href="#" class="text-sm text-gray-700">Products</a>
+            <a href="#" class="text-sm text-gray-700">About</a>
+            <a href="#" class="text-sm text-gray-700">Contact</a>
+
+            <button class="bg-blue-800 text-white/80 px-3 h-7 rounded-full text-xs hover:bg-purple-400 hover:text-gray-700 duration-150">
+                SignUp
+            </button>
         </div>
     </nav>
+
+    <!-- Form Section -->
+    <section class="h-screen w-screen flex justify-center items-center bg-white">
+
+        <div class="bg-blue-50 w-72 h-[380px] rounded-lg border border-gray-400 p-4">
+            <h4 class="text-center text-lg font-semibold">Log In</h4>
+
+            <form class="flex flex-col gap-3 mt-3">
+
+                <!-- Email -->
+                <div class="flex items-center border-2 border-gray-700 rounded-md h-8 bg-white">
+                    <i class="fa-solid fa-envelope bg-gray-700 text-white w-8 h-full flex justify-center items-center"></i>
+                    <input type="email" placeholder="email"
+                        class="flex-1 h-full outline-none bg-transparent pl-2 text-sm">
+                </div>
+
+                <!-- Password -->
+                <div class="flex items-center border-2 border-gray-700 rounded-md h-8 bg-white">
+                    <i class="fa-solid fa-key bg-gray-700 text-white w-8 h-full flex justify-center items-center"></i>
+                    <input type="password" placeholder="password"
+                        class="flex-1 h-full outline-none bg-transparent pl-2 text-sm">
+                </div>
+
+                <!-- OTP -->
+                <div class="flex items-center border-2 border-gray-700 rounded-md h-8 bg-white">
+                    <i class="fa-solid fa-unlock bg-gray-700 text-white w-8 h-full flex justify-center items-center"></i>
+                    <input type="text" placeholder="OTP"
+                        class="flex-1 h-full outline-none bg-transparent pl-2 text-sm">
+                </div>
+
+                <!-- Submit -->
+                <input type="submit" value="Login"
+                    class="h-8 bg-blue-400 rounded-md cursor-pointer text-white text-sm hover:bg-blue-500 transition">
+            </form>
+
+            <p class="text-center text-xs mt-3">
+                <a href="#" class="text-blue-600">Forget Password</a>
+            </p>
+
+            <p class="text-center text-xs mt-1">
+                Don't have an account?
+                <a href="RaCollectionLogIn.html" class="text-blue-600">Create one</a>
+            </p>
+        </div>
+
+    </section>
 
     <section class="formSection">
 
         <div class="container">
             <h4>Log In</h4>
 
-            <form class="form">
+            <form class="form " action="PatientLoginServlet">
                 <div class="inputBox">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" name="email" placeholder="email">
+                    <input type="tel" name="patient_number" placeholder="phone number">
                 </div>
                 <div class="inputBox">
                     <i class="fa-solid fa-key"></i>
-                    <input type="password" name="password" placeholder="password">
+                    <input type="password" name="patient_password" placeholder="password">
                 </div>
-                <div class="inputBox">
-                   <i class="fa-solid fa-unlock"></i>
-                    <input type="OTP" name="OTP" placeholder="OTP">
-                </div>
-
+               
                 <input class="submitBtn" type="submit" value="Login">
             </form>
             <p><a href="#">Forget Password</a></p>
@@ -177,6 +97,7 @@
         </div>
 
     </section>
-</body>
 
+
+</body>
 </html>

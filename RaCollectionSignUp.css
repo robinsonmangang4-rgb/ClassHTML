@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Front-end Dessign</title>
-   
-    <style>
         body {
             padding: 0;
             margin: 0;
@@ -125,60 +115,4 @@
       height: 30px;
       cursor: pointer;
     }
-  </style>
-
   
-</head>
-
-<body>
-
-    <!-- nev bar -->
-    <nav class="nav">
-        <h1>R A collection</h1>
-
-        <div class="navLinks">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <button>Login</button>
-        </div>
-    </nav>
-
-    <section class="formSection">
-
-        <div class="container">
-            <h4>Sign Up</h4>
-
-            <form class="form">
-                <div class="inputBox">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" name="username" placeholder="name">
-                </div>
-                <div class="inputBox">
-                   <i class="fa-solid fa-user"></i>
-                    <input type="email" name="email" placeholder="email">
-                </div>
-                <div class="inputBox">
-                    <i class="fa-solid fa-phone"></i>
-                    <input type="number" name="phone" placeholder="phone">
-                </div>
-                <div class="inputBox">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" name="address" placeholder="address">
-                </div>
-                <div class="inputBox">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <input type="date" name="dob">
-                </div>
-
-                <input class="submitBtn" type="submit" value="Sign Up">
-            </form>
-
-            <p>Already have an account? <a href="RaCollectionLogIn.html">Login here</a></p>
-        </div>
-
-    </section>
-</body>
-
-</html>
