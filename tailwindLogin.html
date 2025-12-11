@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap">
+    <style>
+        * {
+            font-family: 'Jost', sans-serif;
+        }
+
+        /* Required for sliding effect */
+        #chk:checked~.loginBox {
+            transform: translateY(-375px);
+        }
+
+        #chk:checked~.loginBox label {
+            transform: scale(1);
+        }
+
+        #chk:checked~.signupBox label {
+            transform: scale(0.6);
+        }
+    </style>
+    <title>Login Slide</title>
+</head>
+
+<body
+    class="m-0 p-0 flex justify-center items-center min-h-screen bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e]">
+
+    <div class="w-[350px] h-[500px] rounded-lg shadow-[5px_20px_50px_#000] overflow-hidden bg-cover bg-center"
+        style="background-image:url('logimage.webp')">
+
+        <input type="checkbox" id="chk" class="hidden">
+
+        <!-- SIGNUP -->
+        <div class="signupBox relative w-full h-full">
+            <form class="flex flex-col">
+                <label for="chk"
+                    class="text-white text-[2.3em] font-bold flex justify-center mt-[60px] transition-all duration-500 cursor-pointer">
+                    Sign Up
+                </label>
+
+                <input type="text" placeholder="User name" required
+                    class="w-[60%] mx-auto mt-5 p-2 bg-[#e0dede] rounded outline-none" />
+
+                <input type="email" placeholder="email" required
+                    class="w-[60%] mx-auto mt-5 p-2 bg-[#e0dede] rounded outline-none" />
+
+                <input type="password" placeholder="Password" required
+                    class="w-[60%] mx-auto mt-5 p-2 bg-[#e0dede] rounded outline-none" />
+
+                <button
+                    class="w-[60%] mx-auto mt-6 h-10 bg-[#573b8a] text-white font-bold rounded cursor-pointer transition duration-200 hover:bg-[#6d44b8]">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+
+        <!-- LOGIN -->
+        <div
+            class="loginBox h-[100%] bg-[#eee]  rounded-[60%/10%] transform translate-y-[-70px] transition-all duration-700 ease-in-out">
+            <form class="flex flex-col ">
+                <label for="chk"
+                    class="text-[#573b8a] text-[2.3em] font-bold flex justify-center mt-[10px] transition-all duration-500 cursor-pointer scale-[0.6]">
+                    Login
+                </label>
+
+                <input type="email" placeholder="email" required
+                    class="w-[60%] mx-auto mt-5 p-2 bg-[#e0dede] rounded outline-none" />
+
+                <input type="password" placeholder="Password" required
+                    class="w-[60%] mx-auto mt-5 p-2 bg-[#e0dede] rounded outline-none" />
+
+                <button
+                    class="w-[60%] mx-auto mt-6 h-10 bg-[#573b8a] text-white font-bold rounded cursor-pointer transition duration-200 hover:bg-transparent">
+                    LogIn
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
