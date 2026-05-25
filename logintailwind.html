@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <title>Tailwind Login Form</title>
+
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="m-0 p-0 flex justify-center items-center min-h-screen bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e]">
+
+    <div
+        class="relative w-[350px] h-[550px] overflow-hidden rounded-xl shadow-[5px_20px_50px_#000] bg-[url('logimage.webp')] bg-cover bg-center">
+
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="chk" class="peer hidden">
+
+        <!-- Signup Form -->
+        <div class="relative w-full h-full">
+
+            <form action="signup" method="post" class="flex flex-col items-center">
+
+                <label for="chk"
+                    class="text-white text-[2.3em] font-bold cursor-pointer my-[60px] transition-all duration-500 peer-checked:scale-75">
+                    Sign Up
+                </label>
+
+                <input type="text" placeholder="User name"
+                    class="w-[60%] h-[32px] p-[8px] my-2 rounded-md outline-none border-none bg-[#e0dede]" required>
+
+                <input type="email" placeholder="Email"
+                    class="w-[60%] h-[32px] p-[10px] my-2 rounded-md outline-none border-none bg-[#e0dede]" required>
+
+                <input type="password" placeholder="Password"
+                    class="w-[60%] h-[32px] p-[10px] my-2 rounded-md outline-none border-none bg-[#e0dede]" required>
+
+                <button
+                    class="w-[60%] h-[32px] mt-5 bg-[#573b8a] text-white font-bold rounded-md transition-all duration-200 hover:bg-[#0e25f1]">
+                    Sign Up
+                </button>
+
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div
+            class="absolute left-0 w-full h-[460px] bg-[#eee] rounded-[60%_/_15%] translate-y-[-150px] transition-all duration-700 ease-in-out peer-checked:translate-y-[-400px]">
+
+            <form action="login" method="post" class="flex flex-col items-center">
+
+                <label for="chk"
+                    class="text-[#573b8a] text-[2.3em] font-bold cursor-pointer my-[60px] scale-[0.6] transition-all duration-500 peer-checked:scale-100">
+                    Login
+                </label>
+
+                <input type="text" name="username" placeholder="Enter Username"
+                    class="w-[60%] h-[32px] p-[10px] my-2 rounded-md outline-none border-none bg-[#e0dede]" required>
+                <div class="relative w-[60%] mx-auto my-2">
+
+                    <input type="password" id="signupPassword" name="password" placeholder="Password"
+                        class="w-full h-[32px] p-[10px] pr-10 rounded-md outline-none border-none bg-[#e0dede]"
+                        required>
+
+                    <button type="button" onclick="togglePassword()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-purple-700">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+
+
+                <button
+                    class="w-[60%] h-12 mt-5 bg-[#573b8a] text-white font-bold rounded-md transition-all duration-200 hover:bg-[#472caa]">
+                    Login
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script>
+
+function togglePassword()
+{
+    const password = document.getElementById("signupPassword");
+
+    if(password.type === "password")
+    {
+        password.type = "text";
+    }
+    else
+    {
+        password.type = "password";
+    }
+}
+
+</script>
+
+</html>
